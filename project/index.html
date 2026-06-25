@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+
+        <div class="overlay"></div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg"
+                 alt="Netflix Logo"
+                 class="logo">
+
+            <div class="nav-right">
+                <select>
+                    <option>English</option>
+                    <option>Urdu</option>
+                </select>
+
+                <button class="sign-btn">Sign In</button>
+            </div>
+        </nav>
+
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+
+            <h3>Starts at $7.99. Cancel anytime.</h3>
+
+            <p>
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+
+            <div class="email-form">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email address"
+                >
+
+                <button onclick="validateEmail()">
+                    Get Started >
+                </button>
+            </div>
+
+            <small id="message"></small>
+        </div>
+
+    </header>
+
+    <!-- FEATURE 1 -->
+    <section class="feature">
+        <div class="feature-text">
+            <h2>Enjoy on your TV</h2>
+
+            <p>
+                Watch on Smart TVs, Playstation, Xbox, Chromecast,
+                Apple TV, Blu-ray players, and more.
+            </p>
+        </div>
+
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800"
+                 alt="">
+        </div>
+    </section>
+
+    <!-- FEATURE 2 -->
+    <section class="feature reverse">
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=800"
+                 alt="">
+        </div>
+
+        <div class="feature-text">
+            <h2>Download your shows to watch offline</h2>
+
+            <p>
+                Save your favourites easily and always have something
+                to watch.
+            </p>
+        </div>
+    </section>
+
+    <!-- FEATURE 3 -->
+    <section class="feature">
+        <div class="feature-text">
+            <h2>Watch everywhere</h2>
+
+            <p>
+                Stream unlimited movies and TV shows on your phone,
+                tablet, laptop and TV.
+            </p>
+        </div>
+
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+                 alt="">
+        </div>
+    </section>
+
+    <!-- FEATURE 4 -->
+    <section class="feature reverse">
+        <div class="feature-image">
+            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800"
+                 alt="">
+        </div>
+
+        <div class="feature-text">
+            <h2>Create profiles for kids</h2>
+
+            <p>
+                Send kids on adventures with their favourite
+                characters in a space made just for them.
+            </p>
+        </div>
+    </section>
+
+    <!-- MOVIE ROWS -->
+
+    <section class="movies">
+        <h2>Trending Now</h2>
+
+        <div class="movie-row">
+
+            <img src="https://picsum.photos/200/300?1">
+            <img src="https://picsum.photos/200/300?2">
+            <img src="https://picsum.photos/200/300?3">
+            <img src="https://picsum.photos/200/300?4">
+            <img src="https://picsum.photos/200/300?5">
+            <img src="https://picsum.photos/200/300?6">
+
+        </div>
+    </section>
+
+    <section class="movies">
+        <h2>Popular on Netflix</h2>
+
+        <div class="movie-row">
+
+            <img src="https://picsum.photos/200/300?7">
+            <img src="https://picsum.photos/200/300?8">
+            <img src="https://picsum.photos/200/300?9">
+            <img src="https://picsum.photos/200/300?10">
+            <img src="https://picsum.photos/200/300?11">
+            <img src="https://picsum.photos/200/300?12">
+
+        </div>
+    </section>
+
+    <section class="movies">
+        <h2>Action Movies</h2>
+
+        <div class="movie-row">
+
+            <img src="https://picsum.photos/200/300?13">
+            <img src="https://picsum.photos/200/300?14">
+            <img src="https://picsum.photos/200/300?15">
+            <img src="https://picsum.photos/200/300?16">
+            <img src="https://picsum.photos/200/300?17">
+            <img src="https://picsum.photos/200/300?18">
+
+        </div>
+    </section>
+
+    <section class="movies">
+        <h2>Comedy Movies</h2>
+
+        <div class="movie-row">
+
+            <img src="https://picsum.photos/200/300?19">
+            <img src="https://picsum.photos/200/300?20">
+            <img src="https://picsum.photos/200/300?21">
+            <img src="https://picsum.photos/200/300?22">
+            <img src="https://picsum.photos/200/300?23">
+            <img src="https://picsum.photos/200/300?24">
+
+        </div>
+    </section>
+
+    <section class="movies">
+        <h2>Drama Series</h2>
+
+        <div class="movie-row">
+
+            <img src="https://picsum.photos/200/300?25">
+            <img src="https://picsum.photos/200/300?26">
+            <img src="https://picsum.photos/200/300?27">
+            <img src="https://picsum.photos/200/300?28">
+            <img src="https://picsum.photos/200/300?29">
+            <img src="https://picsum.photos/200/300?30">
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="question">
+                What is Netflix?
+            </button>
+
+            <div class="answer">
+                Netflix is a streaming service.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                How much does Netflix cost?
+            </button>
+
+            <div class="answer">
+                Pricing depends on your plan.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                Where can I watch?
+            </button>
+
+            <div class="answer">
+                Anywhere with internet access.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                How do I cancel?
+            </button>
+
+            <div class="answer">
+                Cancel anytime online.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                What can I watch?
+            </button>
+
+            <div class="answer">
+                Movies, TV shows and documentaries.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="question">
+                Is Netflix good for kids?
+            </button>
+
+            <div class="answer">
+                Yes, dedicated kids profiles are available.
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Questions? Contact us.</h3>
+
+        <div class="footer-grid">
+
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Help Center</a>
+
+            <a href="#">Jobs</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Legal Notices</a>
+
+        </div>
+
+        <p>Netflix Clone © 2026</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
